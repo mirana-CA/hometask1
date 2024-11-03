@@ -1,8 +1,11 @@
 console.log(window.location.hash.slice(1));
-let productCards = document.querySelector(".product_cards")
-fetch(`https://672381a8493fac3cf24b2055.mockapi.io/products/${window.location.hash.slice(1)}`)
-  .then(res => res.json())
-  .then(data => {
+let productCards = document.querySelector(".product_card");
+fetch(
+  `https://672381a8493fac3cf24b2055.mockapi.io/products/` +
+    window.location.hash.slice(1)
+)
+  .then((res) => res.json())
+  .then((data) => {
     productCards.innerHTML = `         
      <div class="product_cards_card">
     <img src=${data.img} alt="product_image" />
@@ -17,5 +20,5 @@ fetch(`https://672381a8493fac3cf24b2055.mockapi.io/products/${window.location.ha
     </div>
   </div>
 
-    `}
-)
+    `;
+  });

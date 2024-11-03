@@ -28,7 +28,7 @@ nav {
   font-size: 20px;
   font-weight: normal;
 }
-.header__left_side ul li{
+.header__left_side ul li {
   width: auto;
 }
 .header__left_side ul li a {
@@ -251,9 +251,6 @@ nav {
     gap: 40px 20px;
   }
 
-  .product_cards_card_details {
-    height: 60%;
-  }
   #products .container {
     max-width: 800px;
   }
@@ -267,9 +264,7 @@ nav {
     justify-items: center;
     gap: 40px;
   }
-  .product_cards_card_details {
-    height: 55%;
-  }
+
   #products .container {
     max-width: 550px;
   }
@@ -283,9 +278,7 @@ nav {
     justify-items: center;
     gap: 40px;
   }
-  .product_cards_card_details {
-    height: 55%;
-  }
+
   #products .container {
     max-width: 300px;
   }
